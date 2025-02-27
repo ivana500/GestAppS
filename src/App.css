@@ -1,0 +1,241 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 40s linear;
+  }
+}
+
+.App-header {
+  background-color: #007bff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(460deg);
+  }
+}
+
+
+header {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+
+
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: right;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+
+
+
+
+#hero {
+  background: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+.btn {
+  background: #007bff; /* Bleu ciel */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.feature {
+  background: #e2e2e2;
+  margin: 10px 0;
+  padding: 15px;
+}
+
+blockquote {
+  border-left: 4px solid #007bff; /* Bleu ciel */
+  margin: 20px 0;
+  padding-left: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* Ajout d'une animation pour le bouton */
+@keyframes gradientAnimation {
+  0% {
+      background: linear-gradient(45deg, red, blue);
+  }
+  50% {
+      background: linear-gradient(45deg, blue, red);
+  }
+  100% {
+      background: linear-gradient(45deg, red, blue);
+  }
+}
+
+/* Style du bouton avec l'animation */
+.btn-animated {
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  animation: gradientAnimation 2s infinite alternate;
+  transition: background-color 0.3s ease;
+}
+
+/* Ajout d'un effet au survol pour rendre le bouton plus dynamique */
+.btn-animated:hover {
+  background-color: #ff4500; /* Change légèrement la couleur au survol */
+}
+
+/* Animation du texte qui se déplace de gauche à droite */
+@keyframes textMarquee {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+/* Application du style à la phrase qui défile */
+.dynamic-text {
+  font-size: 2.5rem;  /* Ajustez la taille de la police à votre convenance */
+  font-weight: bold;
+  color: transparent;
+  background: linear-gradient(90deg, #ff007f, #ff7f00, #ff0000, #00f7ff); /* Dégradé de couleur dynamique */
+  background-clip: text;
+  -webkit-background-clip: text; /* Pour Safari */
+  animation: textMarquee 8s linear infinite;
+  white-space: nowrap; /* Evite que le texte se casse à la ligne */
+  padding: 20px 0;
+}
+.container-fluid {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fond légèrement transparent */
+  border-radius: 15px; /* Bordures arrondies du formulaire */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Taille plus petite du formulaire */
+}
+
+h2 {
+  color: #5C6BC0;
+  font-size: 26px;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+input, select {
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 10px; /* Bordures arrondies des champs de formulaire */
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px;
+  background-color: #5C6BC0;
+  color: white;
+  border: none;
+  border-radius: 10px; /* Bordures arrondies du bouton */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4f5bda;
+}
+
+a {
+  color: #5C6BC0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.text-center a {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Police en gras pour tout le formulaire */
+.font-weight-bold {
+  font-weight: bold;
+}
+footer {
+  background-color: #ff0000;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+}

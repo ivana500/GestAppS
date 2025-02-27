@@ -1,0 +1,10 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/package.json"
+      ],
+      "url": "file:///C:/Users/DELL/package-schema.json"
+    }
+  ]
+}
